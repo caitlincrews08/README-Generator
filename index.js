@@ -1,5 +1,8 @@
+// packages necessary for generator to function
 const inquirer = require('inquirer');
+const fs = require('fs');
 
+// function that displays questions to user
 const promptUser = () =>
 inquirer.prompt([
     {
@@ -50,6 +53,7 @@ inquirer.prompt([
       name: 'contribute',
       message: 'What does the user need to know about contributing to the repo?'
     }
+    // answers returned by user
 ]).then(answers => {
   console.log(answers)
 });
