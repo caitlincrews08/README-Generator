@@ -1,5 +1,5 @@
 // this file generates the readme markdown
-function buildREADME(answers) {
+function generateMarkdown(answers) {
   return `
   # ${answers.title}
 
@@ -39,3 +39,5 @@ function buildREADME(answers) {
 
   `
 };
+
+exports.generateMarkdown = generateMarkdown;

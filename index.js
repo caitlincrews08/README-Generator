@@ -1,9 +1,9 @@
 // packages necessary for generator to function
 const inquirer = require('inquirer');
 const fs = require('fs');
-const builder = require('./buildReadMe');
+const build = require('./utils/generateMarkdown.js');
 
-// questions that will be displayed to user
+// array of questions that will be displayed to user
 const questions = [
   {
     type: 'input',
@@ -58,8 +58,14 @@ const questions = [
 // function that will write read me and throw error or success message
 function init() {
   inquirer.prompt(questions).then((answers) => {
-    console.log(answers)
-  })
+    // console.log(answers);
+    const createRm = build.generateMarkdown(answers);
+    // console.log(createRm);
+
+    // this creates the readme file!
+    fs.writeFileSync("Readme.md", createRm, "utf8")
+
+  });
 };
 
 init();
