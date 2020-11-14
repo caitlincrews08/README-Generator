@@ -59,13 +59,17 @@ const questions = [
 function init() {
   inquirer.prompt(questions).then((answers) => {
     // console.log(answers);
+    createBadge(answers);
     const createRm = build.generateMarkdown(answers);
     // console.log(createRm);
 
     // this creates the readme file!
     fs.writeFileSync("Readme.md", createRm, "utf8")
-
   });
 };
-
 init();
+
+function createBadge(answers) {
+  let badgeType = answers.license.split(" ").join("_");
+  answers.badge = `![License](https://img.shields.io/badge/License-${badgeType}-blue.svg)`;
+}
