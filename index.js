@@ -1,7 +1,7 @@
 // packages necessary for generator to function
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require('util');
+const builder = require('./buildReadMe');
 
 // questions that will be displayed to user
 const questions = [
@@ -56,10 +56,10 @@ const questions = [
 ];
 
 // function that will write read me and throw error or success message
-function writeReadMe(questions, answers) {
-  fs.writeFile(questions, answers.join(""), function(err){
-    if(err) {
-      console.log(err)
-    } console.log("Generating README!");
-  });
+function init() {
+  inquirer.prompt(questions).then((answers) => {
+    console.log(answers)
+  })
 };
+
+init();

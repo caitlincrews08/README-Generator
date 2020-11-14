@@ -19,7 +19,6 @@
   "homepage": "https://github.com/caitlincrews08/README-Generator#readme",
   "dependencies": {
     "fs": "0.0.1-security",
-    "inquirer": "^7.3.3",
-    "util": "^0.12.3"
+    "inquirer": "^7.3.3"
   }
 }
