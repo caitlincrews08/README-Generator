@@ -1,9 +1,10 @@
 // this file generates the readme markdown
 function generateMarkdown(answers) {
   return `
-  ${answers.badge}
-
+  
   # ${answers.title}
+  
+  ${answers.badge}
 
   ## Description
   ${answers.description}
