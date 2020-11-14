@@ -64,7 +64,7 @@ function init() {
     // console.log(createRm);
 
     // this creates the readme file!
-    fs.writeFileSync("Readme.md", createRm, "utf8")
+    fs.writeFileSync("README.md", createRm, "utf8")
   });
 };
 init();
