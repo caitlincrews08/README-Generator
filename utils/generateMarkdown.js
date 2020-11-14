@@ -8,6 +8,7 @@ function generateMarkdown(answers) {
   ## Description
   ${answers.description}
 
+
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
@@ -16,27 +17,37 @@ function generateMarkdown(answers) {
   * [Tests](#tests)
   * [Questions](#questions)
   
+  
   ## Installation
-  To install necessarry dependencies, run the following command:
+  To install necessarry dependencies, run the following command:\n
+  \`
   ${answers.install}
+  \`
+
   
   ## Usage
   ${answers.usage}
 
+  
   ## License
-  ${answers.license}
+  This project is licensed under the terms of the ${answers.license} license.
 
+  
   ## Contributing
   ${answers.contribute}
 
+  
   ## Tests
-  To run tests, run the following command:
+  To run tests, run the following command:\n
+  \`
   ${answers.tests}
+  \`
 
+  
   ## Questions
   Have any questions for me? Contact me here:
 
-  Github: [@${answers.username}](https://github.com/${answers.username})
+  Github: [@${answers.username}](https://github.com/${answers.username})\n
   Email: ${answers.email}
 
   `
