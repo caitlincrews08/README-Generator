@@ -5,6 +5,8 @@
   ![License](https://img.shields.io/badge/License-GPL_3.0-blue.svg)
 
   ## Description
+  This repo was developed as part of my week 9 homework assignment for the Coding Bootcamp at the University of Central Florida.
+
   This program generates a README.md file based on user input.
 
 
