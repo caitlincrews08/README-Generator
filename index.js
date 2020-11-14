@@ -69,7 +69,9 @@ function init() {
 };
 init();
 
+// function that generates a badge for the license
 function createBadge(answers) {
+  // this takes away any spaces in the license name and replaces them with an underscore for the purposes of creating the link below
   let badgeType = answers.license.split(" ").join("_");
   answers.badge = `![License](https://img.shields.io/badge/License-${badgeType}-blue.svg)`;
 }
