@@ -21,9 +21,9 @@
   This program requires Node.js and Inquirer.js.
   To install necessary dependencies, run the following command:
 
-  `
+  ```
   npm i
-  `
+  ```
 
   
   ## Usage
@@ -44,9 +44,9 @@
   ## Tests
   To run tests, run the following command:
 
-  `
+  ```
   npm test
-  `
+  ```
 
   
   ## Questions
