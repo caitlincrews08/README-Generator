@@ -30,7 +30,7 @@
   When the user runs `node index.js`, they will be prompted with several questions about their repo. Once the user has submitted all of their answers, a README.md file is generated.
 
   See example demo here:
-  ![demo](https://drive.google.com/file/d/1mA7AaFfEN8Kuvdk0dZw7KnBb0IRRoE-k/view?usp=sharing)
+  [![demo] (./Example/demo_screenshot.png)](https://drive.google.com/file/d/1mA7AaFfEN8Kuvdk0dZw7KnBb0IRRoE-k/view?usp=sharing)
 
   
   ## License
