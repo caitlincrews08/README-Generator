@@ -3,6 +3,8 @@
   # README Generator
 
   ## Description
+  This website was developed as part of my week 9 homework assignment for the Coding Bootcamp at the University of Central Florida.
+
   This program generates a README.md file based on user input.
 
 
@@ -16,6 +18,7 @@
   
   
   ## Installation
+  This program requires Node.js and Inquirer.js.
   To install necessary dependencies, run the following command:
 
   `
@@ -25,6 +28,9 @@
   
   ## Usage
   When the user runs `node index.js`, they will be prompted with several questions about their repo. Once the user has submitted all of their answers, a README.md file is generated.
+
+  See example demo here:
+  [demo](https://drive.google.com/file/d/1mA7AaFfEN8Kuvdk0dZw7KnBb0IRRoE-k/view?usp=sharing)
 
   
   ## License
